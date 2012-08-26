@@ -38,11 +38,16 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Syntax
+" Syntax highlighting and colors
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
+
+" Solarized stuff
+let g:solarized_termtrans=1
+set background=dark
+colorscheme solarized
 
 " Folding
 set nofoldenable
@@ -68,9 +73,6 @@ set scrolloff=3
 " Line numbers, rulers
 set ruler
 set number
-
-" Use a slick color scheme
-colorscheme desert
 
 "" LEADER MAPPINGS
 
