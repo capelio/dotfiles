@@ -1,6 +1,0 @@
-# Ignore everything
-*
-# Except for these files
-!.gitignore
-!.vimrc
-!.tmux.conf
