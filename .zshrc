@@ -36,6 +36,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
 # Aliases
 alias la="ls -lah"
 alias ll="ls -lh"
@@ -45,6 +48,3 @@ source ~/.nvm/nvm.sh
 
 # rbenv - Ruby environment (version) manager
 eval "$(rbenv init -)"
-
-# PATH
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
