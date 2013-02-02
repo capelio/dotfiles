@@ -1,15 +1,30 @@
-"" ONLOAD
-call pathogen#infect()
+"" Compatibility
+set nocompatible
+filetype on
+filetype off
+
+"" VUNDLE
+
+"" Setup
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"" My Bundles
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'pangloss/vim-javascript'
+Bundle 'godlygeek/tabular'
 
 "" VIM BEHAVIOR
 
-" Compatibility
-set nocompatible
-
 " Backups
 set writebackup
-
-" Directories
 set backupdir=~/.vim/temp
 set directory=~/.vim/temp
 
@@ -40,13 +55,11 @@ set smartcase
 
 " Syntax highlighting and colors
 syntax on
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " Solarized stuff
 let g:solarized_termtrans=1
-set background=dark
+set background=light
 colorscheme solarized
 
 " Folding
