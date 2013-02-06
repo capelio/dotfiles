@@ -4,3 +4,8 @@
 	name = C. Corey Capel
 [diff]
 	color = auto
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
