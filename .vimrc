@@ -21,6 +21,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'godlygeek/tabular'
+Bundle 'majutsushi/tagbar'
 
 "" VIM BEHAVIOR
 
@@ -113,3 +114,6 @@ nnoremap <silent> <leader>tw :set nowrap!<CR>
 
 " Toggle NERDTree
 nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
+
+" Toggle Tagbar
+nnoremap <silent> <leader>tm :TagbarToggle<CR>
