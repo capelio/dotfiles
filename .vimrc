@@ -42,7 +42,7 @@ set shiftwidth=2
 set softtabstop=2
 set smarttab
 set autoindent
-set expandtab
+" set expandtab
 
 " Backspacing
 set backspace=indent,eol,start
@@ -59,7 +59,7 @@ filetype plugin indent on
 
 " Solarized stuff
 let g:solarized_termtrans=1
-set background=light
+set background=dark
 colorscheme solarized
 
 " Folding
