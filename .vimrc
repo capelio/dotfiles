@@ -22,6 +22,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'godlygeek/tabular'
 Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 "" VIM BEHAVIOR
 
@@ -57,12 +59,6 @@ set smartcase
 " Syntax highlighting and colors
 syntax on
 filetype plugin indent on
-
-" Solarized stuff
-let g:solarized_termtrans=1
-let g:solarized_visibility="low"
-set background=dark
-colorscheme solarized
 
 " Folding
 set nofoldenable
@@ -115,3 +111,11 @@ nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
 
 " Toggle Tagbar
 nnoremap <silent> <leader>tm :TagbarToggle<CR>
+
+"" PLUGIN CONFIGURATION
+
+" Solarized
+let g:solarized_termtrans=1
+let g:solarized_visibility="low"
+set background=dark
+colorscheme solarized
