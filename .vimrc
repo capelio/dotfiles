@@ -103,13 +103,10 @@ nnoremap <C-k> 5k
 nnoremap <C-l> 5l
 
 " Toggle search higlighting
-nnoremap <silent> <leader>h :set hlsearch!<CR>
+nnoremap <silent> <leader>th :set hlsearch!<CR>
 
 " Toggle line wrapping
-nnoremap <silent> <leader>w :set nowrap!<CR>
+nnoremap <silent> <leader>tw :set nowrap!<CR>
 
 " Toggle NERDTree
-nnoremap <silent> <leader>n :NERDTreeToggle <CR>
-
-" Toggle ZoomWin
-nnoremap <silent> <leader>z :ZoomWin <CR>
+nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
