@@ -116,6 +116,10 @@ nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
 " Solarized
 let g:solarized_termtrans=1
-let g:solarized_visibility="low"
 set background=dark
 colorscheme solarized
+
+"" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_echo_current_error=0
+let g:syntastic_loc_list_height=5
