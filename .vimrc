@@ -10,7 +10,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-"" My Bundles
+"" My Plugin Bundles
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -24,6 +24,18 @@ Bundle 'godlygeek/tabular'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
+
+"" PLUGIN CONFIGURATION
+
+" Solarized
+let g:solarized_termtrans=1
+set background=dark
+colorscheme solarized
+
+"" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_echo_current_error=0
+let g:syntastic_loc_list_height=5
 
 "" VIM BEHAVIOR
 
@@ -112,14 +124,6 @@ nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
 " Toggle Tagbar
 nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
-"" PLUGIN CONFIGURATION
-
-" Solarized
-let g:solarized_termtrans=1
-set background=dark
-colorscheme solarized
-
-"" Syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_echo_current_error=0
-let g:syntastic_loc_list_height=5
+if filereadable(".vimrc.custom")
+	so .vimrc.custom
+endif
