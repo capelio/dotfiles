@@ -24,6 +24,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
 
 "" PLUGIN CONFIGURATION
 
@@ -36,6 +37,9 @@ colorscheme solarized
 let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
 let g:syntastic_loc_list_height=5
+
+"" Powerline
+let g:Powerline_symbols = 'fancy'
 
 "" VIM BEHAVIOR
 
@@ -123,6 +127,9 @@ nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
 
 " Toggle Tagbar
 nnoremap <silent> <leader>tm :TagbarToggle<CR>
+
+" Toggle Syntastic syntax checking
+nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
 
 if filereadable(".vimrc.custom")
 	so .vimrc.custom
