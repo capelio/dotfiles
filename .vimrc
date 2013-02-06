@@ -44,7 +44,6 @@ set shiftwidth=2
 set softtabstop=2
 set smarttab
 set autoindent
-set list
 
 " Backspacing
 set backspace=indent,eol,start
