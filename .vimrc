@@ -41,6 +41,13 @@ let g:syntastic_loc_list_height=5
 "" Powerline
 let g:Powerline_symbols = 'fancy'
 
+"" CtrlP
+let g:ctrlp_custom_ignore = {
+	\ 'dir': '\v[\/](node_modules)$',
+	\ 'dotDir': '\v[\/]\.(git)$',
+	\ 'dotFile': '\v\.(swp|tar|gz|zip)$'
+	\ }
+
 "" VIM BEHAVIOR
 
 " Backups
