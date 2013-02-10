@@ -26,6 +26,8 @@ Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'wavded/vim-stylus'
 
 "" PLUGIN CONFIGURATION
 
