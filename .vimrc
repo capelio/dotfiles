@@ -25,6 +25,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'kchmck/vim-coffee-script'
 
 "" PLUGIN CONFIGURATION
 
