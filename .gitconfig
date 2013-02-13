@@ -11,3 +11,4 @@
 	ci = commit
 	co = checkout
 	st = status
+	pr = pull --rebase
