@@ -69,6 +69,7 @@ set showcmd
 
 " Whitespace
 set nowrap
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set smarttab
@@ -142,3 +143,6 @@ nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
+
+" Force a retab
+nnoremap <silent> <leader>ft :retab!<CR>
