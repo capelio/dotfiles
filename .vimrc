@@ -1,5 +1,7 @@
 "" Compatibility
 set nocompatible
+set secure
+set exrc
 filetype on
 filetype off
 
@@ -67,11 +69,11 @@ set showcmd
 
 " Whitespace
 set nowrap
-set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set smarttab
 set autoindent
+set noexpandtab
 
 " Backspacing
 set backspace=indent,eol,start
@@ -140,7 +142,3 @@ nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
-
-if filereadable(".vimrc.custom")
-	so .vimrc.custom
-endif
