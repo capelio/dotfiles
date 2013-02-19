@@ -146,3 +146,6 @@ nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
 
 " Force a retab
 nnoremap <silent> <leader>ft :retab!<CR>
+
+" Force a reload
+nnoremap <silent> <leader>fr :e<CR>
