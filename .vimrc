@@ -135,6 +135,9 @@ nnoremap <silent> <leader>th :set hlsearch!<CR>
 " Toggle line wrapping
 nnoremap <silent> <leader>tw :set nowrap!<CR>
 
+" Toggle line numbers
+nnoremap <silent> <leader>t# :set number!<CR>
+
 " Toggle NERDTree
 nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
 
@@ -149,3 +152,9 @@ nnoremap <silent> <leader>ft :retab!<CR>
 
 " Force a reload
 nnoremap <silent> <leader>fr :e<CR>
+
+" Go to the next buffer
+nnoremap <silent> ] :bnext<CR>
+
+" Go to the previous buffer
+nnoremap <silent> [ :bprev<CR>
