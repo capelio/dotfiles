@@ -30,6 +30,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
+Bundle 'dahu/vim-fanfingtastic'
 
 "" PLUGIN CONFIGURATION
 
@@ -45,13 +46,6 @@ let g:syntastic_loc_list_height=5
 
 "" Powerline
 let g:Powerline_symbols = 'fancy'
-
-"" CtrlP
-let g:ctrlp_custom_ignore = {
-	\ 'dir': '\v[\/](node_modules)$',
-	\ 'dotDir': '\v[\/]\.(git)$',
-	\ 'dotFile': '\v\.(swp|tar|gz|zip)$'
-	\ }
 
 "" VIM BEHAVIOR
 
@@ -146,6 +140,9 @@ nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
+
+" Toggle registers
+nnoremap <silent> <leader>tr :registers<CR>
 
 " Force a retab
 nnoremap <silent> <leader>ft :retab!<CR>
