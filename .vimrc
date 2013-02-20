@@ -48,6 +48,9 @@ let g:syntastic_loc_list_height=5
 "" Powerline
 let g:Powerline_symbols = 'fancy'
 
+"" EasyMotion
+let g:EasyMotion_leader_key = '<Space>'
+
 "" VIM BEHAVIOR
 
 " Backups
