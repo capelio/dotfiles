@@ -164,3 +164,11 @@ nnoremap <silent> ] :bnext<CR>
 
 " Go to the previous buffer
 nnoremap <silent> [ :bprev<CR>
+
+"" Fugitive (git plugin)
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gr :Gread<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gb :Gblame<CR>
