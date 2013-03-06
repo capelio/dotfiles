@@ -32,6 +32,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'airblade/vim-gitgutter'
 
 "" PLUGIN CONFIGURATION
 
