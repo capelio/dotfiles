@@ -23,7 +23,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'godlygeek/tabular'
-Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
@@ -31,7 +30,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
 Bundle 'dahu/vim-fanfingtastic'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'airblade/vim-gitgutter'
 
 "" PLUGIN CONFIGURATION
@@ -144,9 +142,6 @@ nnoremap <silent> <leader>t# :set number!<CR>
 
 " Toggle NERDTree
 nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
-
-" Toggle Tagbar
-nnoremap <silent> <leader>tm :TagbarToggle<CR>
 
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
