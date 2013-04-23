@@ -30,6 +30,8 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'cespare/vim-toml'
 
 "" PLUGIN CONFIGURATION
 
