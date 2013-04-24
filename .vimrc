@@ -24,7 +24,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
@@ -34,6 +33,9 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'cespare/vim-toml'
 
 "" PLUGIN CONFIGURATION
+
+" Powerline
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " Solarized
 let g:solarized_termtrans=1
