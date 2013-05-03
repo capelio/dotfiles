@@ -20,7 +20,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-easymotion'
@@ -31,16 +30,12 @@ Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'cespare/vim-toml'
+Bundle 'chriskempson/base16-vim'
 
 "" PLUGIN CONFIGURATION
 
 " Powerline
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
-" Solarized
-let g:solarized_termtrans=1
-set background=dark
-colorscheme solarized
 
 "" Syntastic
 let g:syntastic_check_on_open=1
@@ -93,6 +88,14 @@ set smartcase
 " Syntax highlighting and colors
 syntax on
 filetype plugin indent on
+set background=dark
+colorscheme base16-tomorrow
+hi SignColumn ctermbg=black
+hi LineNr ctermbg=black
+hi CursorLineNr ctermbg=black
+hi TabLine ctermbg=red
+hi TabLineFill ctermbg=blue
+hi StatusLineNC ctermbg=cyan
 
 " Folding
 set nofoldenable
