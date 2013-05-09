@@ -42,9 +42,6 @@ let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
 let g:syntastic_loc_list_height=5
 
-"" Powerline
-let g:Powerline_symbols = 'fancy'
-
 "" EasyMotion
 let g:EasyMotion_leader_key = '<Space>'
 
@@ -93,9 +90,6 @@ colorscheme base16-tomorrow
 hi SignColumn ctermbg=black
 hi LineNr ctermbg=black
 hi CursorLineNr ctermbg=black
-hi TabLine ctermbg=red
-hi TabLineFill ctermbg=blue
-hi StatusLineNC ctermbg=cyan
 
 " Folding
 set nofoldenable
