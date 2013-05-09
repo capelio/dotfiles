@@ -5,7 +5,9 @@ set exrc
 filetype on
 filetype off
 
+""
 "" VUNDLE
+""
 
 "" Setup
 set rtp+=~/.vim/bundle/vundle/
@@ -32,7 +34,9 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'cespare/vim-toml'
 Bundle 'chriskempson/base16-vim'
 
+""
 "" PLUGIN CONFIGURATION
+""
 
 " Powerline
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
@@ -50,7 +54,9 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+""
 "" VIM BEHAVIOR
+""
 
 " Backups
 set writebackup
@@ -110,13 +116,17 @@ set hidden
 " Scrolling
 set scrolloff=3
 
+""
 "" VISUALS
+""
 
 " Line numbers, rulers
 set ruler
 set number
 
+""
 "" LEADER MAPPINGS
+""
 
 " Use comma for the leader
 let mapleader=","
