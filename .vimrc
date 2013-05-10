@@ -112,7 +112,7 @@ set wildmenu
 set wildmode=list:longest,list:full
 
 " Sequence timeout
-set timeoutlen=250
+set timeoutlen=500
 
 " Buffers
 set hidden
