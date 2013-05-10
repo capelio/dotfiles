@@ -36,8 +36,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# PATH
+# Env
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin
+export EDITOR=vim
 
 # Aliases
 alias la="ls -lah"
