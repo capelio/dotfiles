@@ -2,6 +2,7 @@
 set nocompatible
 set secure
 set exrc
+set noesckeys
 filetype on
 filetype off
 
@@ -109,6 +110,9 @@ set history=1000
 " File completion
 set wildmenu
 set wildmode=list:longest,list:full
+
+" Sequence timeout
+set timeoutlen=250
 
 " Buffers
 set hidden
