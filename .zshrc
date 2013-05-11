@@ -4,7 +4,6 @@ colors
 setopt prompt_subst
 
 # Prompt
-local smiley="%(?,%{$fg[green]%}✓%{$reset_color%},%{$fg[red]%}✗%{$reset_color%}) "
 local folder="ﬦ"
 local git="⑂"
 local git_staged="%{$fg[green]%}●%{$reset_color%}"
@@ -38,7 +37,7 @@ function git_branch {
 # Left prompt
 PROMPT='
 %~
-${smiley}$(folder_symbol)$(git_branch)$(git_symbols)%{$reset_color%}'
+$(folder_symbol)$(git_branch)$(git_symbols)%{$reset_color%}'
 
 # Right prompt
 RPROMPT='%T ∙ %D ∙ %n@%m'
