@@ -15,25 +15,26 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-"" My Plugin Bundles
+"" Bundles
+" functionality
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
-Bundle 'pangloss/vim-javascript'
-Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'wavded/vim-stylus'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'RelOps'
+" syntax
 Bundle 'cespare/vim-toml'
+Bundle 'wavded/vim-stylus'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-markdown'
 Bundle 'chriskempson/base16-vim'
-Bundle 'vim-scripts/RelOps'
+Bundle 'pangloss/vim-javascript'
 
 ""
 "" PLUGIN CONFIGURATION
