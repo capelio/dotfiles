@@ -39,9 +39,6 @@ Bundle 'vim-scripts/RelOps'
 "" PLUGIN CONFIGURATION
 ""
 
-" Powerline
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
 "" Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
