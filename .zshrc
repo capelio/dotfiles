@@ -11,6 +11,9 @@ local git_unstaged="%{$fg[yellow]%}±%{$reset_color%}"
 local git_untracked="%{$fg[red]%}!%{$reset_color%}"
 
 # Prompt functions
+function cwd {
+	echo "%{$fg[blue]%}%~%{$reset_color%}"
+}
 function folder_symbol {
 	git branch >/dev/null 2>/dev/null && echo "${git} " && return
 	echo "${folder} "
@@ -36,7 +39,7 @@ function git_branch {
 
 # Left prompt
 PROMPT='
-%~
+$(cwd)
 $(folder_symbol)$(git_branch)$(git_symbols)%{$reset_color%}'
 
 # Right prompt
