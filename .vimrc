@@ -26,6 +26,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'RelOps'
 " syntax
 Bundle 'cespare/vim-toml'
@@ -52,6 +53,16 @@ let g:EasyMotion_leader_key = '<Space>'
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+""
+"" RUN AUTOMATICALLY
+""
+
+" Turn on Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 ""
 "" VIM BEHAVIOR
