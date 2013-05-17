@@ -147,13 +147,13 @@ nnoremap <C-l> 5l
 nnoremap <silent> <leader>th :set hlsearch!<CR>
 
 " Toggle line wrapping
-nnoremap <silent> <leader>tw :set nowrap!<CR>
+nnoremap <silent> <leader>tw :set wrap!<CR>:set linebreak!<CR>
 
 " Toggle line numbers
 nnoremap <silent> <leader>t# :set number!<CR>
 
 " Toggle NERDTree
-nnoremap <silent> <leader>tn :NERDTreeToggle <CR>
+nnoremap <silent> <leader>tn :NERDTreeToggle<CR>
 
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
