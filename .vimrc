@@ -16,7 +16,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "" Bundles
-" functionality
+" Functionality
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -26,9 +26,11 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
+" Clojure programming
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'RelOps'
-" syntax
+" Misc syntax
 Bundle 'cespare/vim-toml'
 Bundle 'wavded/vim-stylus'
 Bundle 'digitaltoad/vim-jade'
