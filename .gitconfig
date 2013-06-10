@@ -12,3 +12,4 @@
 	co = checkout
 	st = status
 	pr = pull --rebase
+	sm = submodule
