@@ -105,9 +105,22 @@ syntax on
 filetype plugin indent on
 set background=dark
 colorscheme base16-tomorrow
-hi SignColumn ctermbg=black
-hi LineNr ctermbg=black
-hi CursorLineNr ctermbg=black
+" Fine tune the base16 tomorrow theme
+hi Search ctermfg=LightGrey
+hi Search ctermbg=DarkGrey
+hi IncSearch ctermfg=White
+hi IncSearch ctermbg=DarkGrey
+hi CursorLine ctermbg=Black
+hi CursorLine ctermfg=White
+hi StatusLineNC ctermfg=White
+hi StatusLineNC ctermbg=DarkGrey
+hi LineNr ctermbg=Black
+hi SignColumn ctermbg=Black
+hi StatusLine ctermfg=White
+hi StatusLine ctermbg=DarkGrey
+hi GitGutterAdd ctermbg=Black
+hi GitGutterChange ctermbg=Black
+hi GitGutterDelete ctermbg=Black
 
 " Folding
 set nofoldenable
