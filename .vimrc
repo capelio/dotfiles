@@ -26,6 +26,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 " Clojure programming
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
@@ -38,7 +40,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
 Bundle 'chriskempson/base16-vim'
 Bundle 'pangloss/vim-javascript'
-Bundle 'bling/vim-airline'
 
 ""
 "" PLUGIN CONFIGURATION
@@ -107,6 +108,7 @@ set smartcase
 " Syntax highlighting and colors
 syntax on
 filetype plugin indent on
+set t_Co=256
 set background=dark
 colorscheme base16-tomorrow
 " Fine tune the base16 tomorrow theme
