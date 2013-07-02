@@ -38,6 +38,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
 Bundle 'chriskempson/base16-vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'bling/vim-airline'
 
 ""
 "" PLUGIN CONFIGURATION
