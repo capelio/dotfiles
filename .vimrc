@@ -48,6 +48,9 @@ Bundle 'pangloss/vim-javascript'
 "" Airline
 let g:airline_powerline_fonts=1
 
+"" Bufferline
+let g:bufferline_echo=0
+
 "" Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
