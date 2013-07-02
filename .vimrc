@@ -44,6 +44,9 @@ Bundle 'bling/vim-airline'
 "" PLUGIN CONFIGURATION
 ""
 
+"" Airline
+let g:airline_powerline_fonts=1
+
 "" Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
