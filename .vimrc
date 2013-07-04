@@ -47,6 +47,7 @@ Bundle 'pangloss/vim-javascript'
 
 "" Airline
 let g:airline_powerline_fonts=1
+set lazyredraw
 
 "" Bufferline
 let g:bufferline_echo=0
