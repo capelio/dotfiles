@@ -27,7 +27,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
+"Bundle 'bling/vim-bufferline'
 " Clojure programming
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
@@ -40,17 +40,21 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
 Bundle 'chriskempson/base16-vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'groenewege/vim-less'
 
 ""
 "" PLUGIN CONFIGURATION
 ""
+
+"" CtrlP
+let g:ctrlp_follow_symlinks=0
 
 "" Airline
 let g:airline_powerline_fonts=1
 set lazyredraw
 
 "" Bufferline
-let g:bufferline_echo=0
+"let g:bufferline_echo=0
 
 "" Syntastic
 let g:syntastic_check_on_open=1
