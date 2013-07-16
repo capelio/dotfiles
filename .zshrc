@@ -52,7 +52,7 @@ HISTFILE=~/.history
 setopt APPEND_HISTORY
 
 # Environment variables
-PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 EDITOR=vim
 
 # Aliases
