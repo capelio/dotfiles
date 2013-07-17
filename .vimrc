@@ -192,6 +192,9 @@ nnoremap <silent> <leader>tw :set wrap!<CR>:set linebreak!<CR>
 " Toggle line numbers
 nnoremap <silent> <leader>t# :set number!<CR>
 
+" Toggle paste mode
+nnoremap <silent> <leader>tp :set paste!<CR>
+
 " Toggle NERDTree
 nnoremap <silent> <leader>tn :NERDTreeToggle<CR>
 
