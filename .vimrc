@@ -39,7 +39,8 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
 Bundle 'chriskempson/base16-vim'
-Bundle 'pangloss/vim-javascript'
+"Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
 Bundle 'groenewege/vim-less'
 
 ""
