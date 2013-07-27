@@ -27,6 +27,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
+Bundle 'Yggdroot/indentLine'
 "Bundle 'bling/vim-bufferline'
 " Clojure programming
 Bundle 'guns/vim-clojure-static'
