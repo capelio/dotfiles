@@ -43,6 +43,7 @@ Bundle 'chriskempson/base16-vim'
 "Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'groenewege/vim-less'
+Bundle 'cakebaker/scss-syntax.vim'
 
 ""
 "" PLUGIN CONFIGURATION
