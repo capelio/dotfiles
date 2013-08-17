@@ -61,3 +61,6 @@ alias la="ls -lah"
 
 # NVM
 . ~/.nvm/nvm.sh
+
+# rbenv
+eval "$(rbenv init -)"
