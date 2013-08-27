@@ -28,6 +28,7 @@ Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'Yggdroot/indentLine'
+Bundle 'editorconfig/editorconfig-vim'
 " Clojure programming
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
