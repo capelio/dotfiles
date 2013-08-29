@@ -1,15 +1,16 @@
 [core]
-	pager = less -x1,5
+  pager = less -x1,5
+  editor = vim
 [push]
-	default = upstream
+  default = upstream
 [user]
-	name = C. Corey Capel
+  name = C. Corey Capel
 [diff]
-	color = auto
+  color = auto
 [alias]
-	br = branch
-	ci = commit
-	co = checkout
-	st = status
-	pr = pull --rebase
-	sm = submodule
+  br = branch
+  ci = commit
+  co = checkout
+  st = status
+  pr = pull --rebase
+  sm = submodule
