@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 "" Bundles
 " Functionality
+Bundle 'wikitopian/hardmode'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -65,14 +66,12 @@ let g:syntastic_loc_list_height=5
 "" EasyMotion
 let g:EasyMotion_leader_key = '<Space>'
 
-"" Javascript syntax (HTML indentation)
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
 ""
 "" RUN AUTOMATICALLY
 ""
+
+" Turn on HardMode!
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " Turn on Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
