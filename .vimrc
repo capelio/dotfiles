@@ -32,15 +32,13 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'kien/rainbow_parentheses.vim'
-" Misc syntax
+" Syntax highlighting
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'jelera/vim-javascript-syntax'
 Bundle 'cespare/vim-toml'
 Bundle 'wavded/vim-stylus'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
-Bundle 'chriskempson/base16-vim'
-"Bundle 'pangloss/vim-javascript'
-Bundle 'jelera/vim-javascript-syntax'
 Bundle 'groenewege/vim-less'
 Bundle 'cakebaker/scss-syntax.vim'
 
@@ -53,10 +51,9 @@ let g:ctrlp_follow_symlinks=0
 
 "" Airline
 let g:airline_powerline_fonts=1
-set lazyredraw
 
-"" Bufferline
-"let g:bufferline_echo=0
+"" Solarized
+let g:solarized_termcolors=256
 
 "" Syntastic
 let g:syntastic_check_on_open=1
@@ -113,27 +110,10 @@ set ignorecase
 set smartcase
 
 " Syntax highlighting and colors
-syntax on
+syntax enable
 filetype plugin indent on
-set t_Co=256
 set background=dark
-colorscheme base16-tomorrow
-" Fine tune the base16 tomorrow theme
-hi Search ctermfg=LightGrey
-hi Search ctermbg=DarkGrey
-hi IncSearch ctermfg=White
-hi IncSearch ctermbg=DarkGrey
-hi CursorLine ctermbg=Black
-hi CursorLine ctermfg=White
-hi StatusLineNC ctermfg=White
-hi StatusLineNC ctermbg=DarkGrey
-hi LineNr ctermbg=Black
-hi SignColumn ctermbg=Black
-hi StatusLine ctermfg=White
-hi StatusLine ctermbg=DarkGrey
-hi GitGutterAdd ctermbg=Black
-hi GitGutterChange ctermbg=Black
-hi GitGutterDelete ctermbg=Black
+colorscheme solarized
 
 " Folding
 set nofoldenable
@@ -149,7 +129,7 @@ set wildmenu
 set wildmode=list:longest,list:full
 
 " Sequence timeout
-set timeoutlen=500
+set ttimeoutlen=100
 
 " Buffers
 set hidden
@@ -176,12 +156,6 @@ let mapleader=","
 nnoremap ' `
 nnoremap ` '
 
-" Navigate lines more quickly
-nnoremap <C-h> 5h
-nnoremap <C-j> 5j
-nnoremap <C-k> 5k
-nnoremap <C-l> 5l
-
 " Toggle search higlighting
 nnoremap <silent> <leader>th :set hlsearch!<CR>
 
@@ -200,20 +174,14 @@ nnoremap <silent> <leader>tn :NERDTreeToggle<CR>
 " Toggle Syntastic syntax checking
 nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
 
-" Toggle registers
-nnoremap <silent> <leader>tr :registers<CR>
+" Show registers
+nnoremap <silent> <leader>sr :registers<CR>
 
 " Force a retab
 nnoremap <silent> <leader>ft :retab!<CR>
 
 " Force a reload
 nnoremap <silent> <leader>fr :e<CR>
-
-" Go to the next buffer
-nnoremap <silent> ] :bnext<CR>
-
-" Go to the previous buffer
-nnoremap <silent> [ :bprev<CR>
 
 "" Fugitive (git plugin)
 nnoremap <leader>gs :Gstatus<CR>
