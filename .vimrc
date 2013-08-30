@@ -33,7 +33,6 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'kien/rainbow_parentheses.vim'
 " Syntax highlighting
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'cespare/vim-toml'
 Bundle 'wavded/vim-stylus'
@@ -51,9 +50,6 @@ let g:ctrlp_follow_symlinks=0
 
 "" Airline
 let g:airline_powerline_fonts=1
-
-"" Solarized
-let g:solarized_termcolors=256
 
 "" Syntastic
 let g:syntastic_check_on_open=1
@@ -113,7 +109,6 @@ set smartcase
 syntax enable
 filetype plugin indent on
 set background=dark
-colorscheme solarized
 
 " Folding
 set nofoldenable
