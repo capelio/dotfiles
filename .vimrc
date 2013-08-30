@@ -28,6 +28,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'Yggdroot/indentLine'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'dbakker/vim-lint'
 " Clojure programming
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
@@ -35,8 +36,6 @@ Bundle 'kien/rainbow_parentheses.vim'
 " Syntax highlighting
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'cespare/vim-toml'
-Bundle 'wavded/vim-stylus'
-Bundle 'digitaltoad/vim-jade'
 Bundle 'tpope/vim-markdown'
 Bundle 'groenewege/vim-less'
 Bundle 'cakebaker/scss-syntax.vim'
@@ -49,7 +48,10 @@ Bundle 'cakebaker/scss-syntax.vim'
 let g:ctrlp_follow_symlinks=0
 
 "" Airline
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_inactive_collapse=1
 
 "" Syntastic
 let g:syntastic_check_on_open=1
@@ -63,14 +65,14 @@ let g:EasyMotion_leader_key = '<Space>'
 "" RUN AUTOMATICALLY
 ""
 
-" Turn on HardMode!
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
 " Turn on Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Turn on HardMode!
+au VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 ""
 "" VIM BEHAVIOR
