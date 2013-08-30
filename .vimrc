@@ -3,8 +3,6 @@ set nocompatible
 set secure
 set exrc
 set noesckeys
-filetype on
-filetype off
 
 ""
 "" VUNDLE
