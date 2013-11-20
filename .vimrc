@@ -144,7 +144,7 @@ nnoremap ' `
 nnoremap ` '
 
 " Toggle search higlighting
-nnoremap <silent> <leader>th :set hlsearch!<CR>
+nnoremap <silent> <leader>ts :set hlsearch!<CR>
 
 " Toggle line wrapping
 nnoremap <silent> <leader>tw :set wrap!<CR>:set linebreak!<CR>
