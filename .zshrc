@@ -1,12 +1,19 @@
 # Setting up the environment
 autoload -U colors
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' check-for-changes true
+zstyle ':vcs_info:git*' formats "%b %m%u%c"
 colors
 setopt prompt_subst
+precmd() {
+  vcs_info
+}
 
 # Prompt
 PROMPT='
 %{$fg[cyan]%}%~%{$reset_color%}
-𝝺 '
+${vcs_info_msg_0_} 𝝺 '
 
 # History
 HISTSIZE=1000
@@ -27,3 +34,9 @@ alias la="ls -lah"
 
 # rbenv
 eval "$(rbenv init -)"
+
+# SSH aliases
+alias rylos="ssh rylos@162.243.111.6"
+
+# Work aliases
+alias awsfc="ssh -At ec2-user@54.208.127.117 ssh ec2-user@10.0.8.10"
