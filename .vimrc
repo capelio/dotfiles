@@ -37,6 +37,7 @@ Bundle 'cespare/vim-toml'
 Bundle 'tpope/vim-markdown'
 Bundle 'groenewege/vim-less'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'elzr/vim-json'
 " Color schemes
 Bundle 'altercation/vim-colors-solarized'
 
