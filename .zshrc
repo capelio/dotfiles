@@ -1,19 +1,26 @@
 # Setting up the environment
 autoload -U colors
+colors
+
+# Display git repo info in the prompt
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git*' check-for-changes true
-zstyle ':vcs_info:git*' formats "%b %m%u%c"
-colors
+zstyle ':vcs_info:git*' use-simple true
+zstyle ':vcs_info:git*' formats " (%b) %m%u%c"
+zstyle ':vcs_info:git*' stagedstr "+"
+zstyle ':vcs_info:git*' unstagedstr "!"
 setopt prompt_subst
+
+# Do the work we'll need to do before the command is run
 precmd() {
   vcs_info
 }
 
 # Prompt
 PROMPT='
-%{$fg[cyan]%}%~%{$reset_color%}
-${vcs_info_msg_0_} 𝝺 '
+%{$fg[cyan]%}%~%{$reset_color%}${vcs_info_msg_0_}
+𝝺 '
 
 # History
 HISTSIZE=1000
