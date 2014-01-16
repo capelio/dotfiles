@@ -40,6 +40,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'elzr/vim-json'
 " Color schemes
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'junegunn/seoul256.vim'
 
 ""
 "" PLUGIN CONFIGURATION
@@ -130,8 +131,7 @@ set ruler
 set number
 
 " Color scheme
-set background=light
-colorscheme solarized
+colorscheme seoul256
 
 ""
 "" LEADER MAPPINGS
