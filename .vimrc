@@ -130,6 +130,10 @@ set scrolloff=3
 set ruler
 set number
 
+" Encourage 80 columns of characters per file
+set textwidth=80
+let &colorcolumn=join(range(81,999),",")
+
 " Color scheme
 colorscheme seoul256
 
