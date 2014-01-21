@@ -19,7 +19,7 @@ precmd() {
 # Prompt
 PROMPT='
 %{$fg[cyan]%}%~%{$reset_color%}${vcs_info_msg_0_}
-𝝺 '
+%n@%m 𝝺 '
 
 # History
 HISTSIZE=1000
