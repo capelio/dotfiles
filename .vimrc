@@ -121,9 +121,8 @@ set scrolloff=3
 "" VISUALS
 ""
 
-" Line numbers, rulers
+" Line rulers
 set ruler
-set number
 
 " Encourage 80 columns of characters per file
 set textwidth=80
