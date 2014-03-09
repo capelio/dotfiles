@@ -29,10 +29,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'dbakker/vim-lint'
 " Syntax highlighting
 Bundle 'jelera/vim-javascript-syntax'
-Bundle 'cespare/vim-toml'
 Bundle 'tpope/vim-markdown'
-Bundle 'groenewege/vim-less'
-Bundle 'cakebaker/scss-syntax.vim'
 " Color schemes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'junegunn/seoul256.vim'
@@ -130,6 +127,7 @@ let &colorcolumn=join(range(81,999),",")
 
 " Color scheme
 colorscheme seoul256
+set background=dark
 
 ""
 "" LEADER MAPPINGS
