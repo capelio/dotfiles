@@ -9,9 +9,9 @@ set noesckeys
 ""
 
 "" Setup
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Bundle 'gmarik/Vundle.vim'
 
 "" Bundles
 " Functionality
@@ -126,7 +126,7 @@ set textwidth=80
 let &colorcolumn=join(range(81,999),",")
 
 " Color scheme
-colorscheme seoul256
+" colorscheme seoul256
 set background=dark
 
 ""
