@@ -39,6 +39,3 @@ alias lb="ls -lhSr"
 
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
-
-# rbenv
-eval "$(rbenv init -)"
