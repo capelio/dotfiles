@@ -39,3 +39,6 @@ alias lb="ls -lhSr"
 
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
+
+# Haskell platform executables
+[ -s $HOME/Library/Haskell/bin ] && PATH="$PATH:$HOME/Library/Haskell/bin"
