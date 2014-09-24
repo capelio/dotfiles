@@ -8,31 +8,35 @@ set noesckeys
 "" VUNDLE
 ""
 
+"" Turn off filetype before starting Vundle, re-enable alter
+filetype off
+
 "" Setup
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Bundle 'gmarik/Vundle.vim'
 
 "" Bundles
+" Vundle itself is a bundle
+Bundle 'gmarik/Vundle.vim'
 " Functionality
-Bundle 'wikitopian/hardmode'
+Bundle 'dbakker/vim-lint'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'dahu/vim-fanfingtastic'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'Yggdroot/indentLine'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'dbakker/vim-lint'
 " Syntax highlighting
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tpope/vim-markdown'
 " Color schemes
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'junegunn/seoul256.vim'
+
+"" Close Vundle, re-enable filetype
+call vundle#end()
+filetype plugin indent on
 
 ""
 "" PLUGIN CONFIGURATION
@@ -41,20 +45,8 @@ Bundle 'junegunn/seoul256.vim'
 "" CtrlP
 let g:ctrlp_follow_symlinks=0
 
-"" Syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_echo_current_error=0
-let g:syntastic_loc_list_height=5
-
 "" EasyMotion
 let g:EasyMotion_leader_key='<Space>'
-
-""
-"" RUN AUTOMATICALLY
-""
-
-" Turn on HardMode!
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 ""
 "" VIM BEHAVIOR
@@ -90,7 +82,6 @@ set smartcase
 
 " Syntax highlighting
 syntax enable
-filetype plugin indent on
 
 " Folding
 set nofoldenable
@@ -121,13 +112,8 @@ set scrolloff=3
 " Line rulers
 set ruler
 
-" Encourage 80 columns of characters per file
-set textwidth=80
-let &colorcolumn=join(range(81,999),",")
-
 " Color scheme
-" colorscheme seoul256
-set background=dark
+colorscheme seoul256
 
 ""
 "" LEADER MAPPINGS
@@ -157,9 +143,6 @@ nnoremap <silent> <leader>th :call ToggleHardMode()<CR>
 
 " Toggle NERDTree
 nnoremap <silent> <leader>tn :NERDTreeToggle<CR>
-
-" Toggle Syntastic syntax checking
-nnoremap <silent> <leader>te :SyntasticToggleMode<CR>
 
 " Show registers
 nnoremap <silent> <leader>sr :registers<CR>
