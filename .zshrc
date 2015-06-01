@@ -2,6 +2,10 @@
 autoload -U colors
 colors
 
+# Enable completion
+autoload -U compinit && compinit
+zmodload -i zsh/complist
+
 # Display git repo info in the prompt
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
