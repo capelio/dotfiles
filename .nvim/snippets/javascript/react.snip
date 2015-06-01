@@ -1,0 +1,10 @@
+snippet reactCreateClass
+alias   reacc
+options word
+  React.createClass(${1:#:mixins, }{
+    displayName: '${2:#:displayName}',
+
+    render () {
+      return ${3:#:element}
+    }
+  }
